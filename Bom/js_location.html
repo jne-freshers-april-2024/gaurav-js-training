@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In accusantium esse iure ipsa? Mollitia recusandae, provident maiores odio qui, eveniet quam magnam minus amet adipisci blanditiis libero nam, quos aperiam nostrum excepturi ab tenetur minima impedit modi incidunt vel eligendi dolores sequi! Quibusdam, blanditiis labore?</p>
+    <h1 id="h">Heading</h1>
+    <button id="btn" onclick="chne()">Location</button>
+    <button id="btn" onclick="chne1()">Hostname</button>
+    <button id="btn" onclick="chne2()">PathName</button>
+    <button id="btn" onclick="chne3()">Protocol</button>
+    <button id="btn" onclick="chne4()">Port</button>
+    <script>
+        function chne(){
+            document.getElementById("h").innerHTML = "Page location is "+ window.location.href;
+        }
+        function chne1(){
+            document.getElementById("h").innerHTML = "Page hostname is "+ window.location.hostname;
+        }
+        function chne2(){
+            document.getElementById("h").innerHTML = "Page pathname is "+ window.location.pathname;
+        }
+        function chne3(){
+            document.getElementById("h").innerHTML = "Page protocol is "+ window.location.protocol;
+        }
+        function chne4(){
+            document.getElementById("h").innerHTML = "port number is "+ window.location.port;
+        }
+    </script>
+</body>
+</html>
