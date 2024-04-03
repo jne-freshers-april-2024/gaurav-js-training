@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure sapiente exercitationem omnis, neque vel eveniet alias temporibus reprehenderit beatae, nobis ea quia numquam, sunt quo. Aliquam architecto consequuntur voluptate rem ullam voluptatibus nisi totam ad ex officiis et mollitia, adipisci exercitationem aspernatur optio perspiciatis, omnis expedita? Dolore similique veniam culpa inventore tempore possimus! Quisquam, fugit. Culpa harum aliquam voluptate! Itaque neque repellendus, aliquid consectetur pariatur beatae esse.</p>
+    <h1 id="h">Heading</h1>
+    <button onclick="newFun()">width</button>
+    <button onclick="neTry()">Height</button>
+    <button onclick="tryDiff()">colorDepth</button>
+    <script>
+        function newFun(){
+            document.getElementById("h").innerHTML = "Screen width "+ screen.width;
+        }
+        function neTry(){
+            document.getElementById("h").innerHTML = "Screen height "+ screen.height;
+        }
+        function tryDiff(){
+            document.getElementById("h").innerHTML = "Screen colorDepth "+ screen.colorDepth;
+        }
+    </script>
+</body>
+</html>

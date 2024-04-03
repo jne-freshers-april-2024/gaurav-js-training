@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">Heading</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo eum voluptatem non vitae minima! Aspernatur itaque et quam cupiditate earum optio? Sunt delectus porro quibusdam eaque similique vero officiis eius harum totam nisi saepe sint, aperiam aliquam neque, recusandae deleniti accusantium fugiat qui repellat perspiciatis sit? Obcaecati porro non fugiat cum, a quam est assumenda omnis vitae nemo eos sint ratione ipsum corrupti, ad molestias modi doloribus.</p>
+    <button id="btn" onclick="myFun()">Click Me</button>
+    <script>
+        function myFun(){
+            document.getElementById("head").innerHTML = "Heading Start Here";
+            document.getElementById("head").setAttribute("style", "color: red;");
+        }
+    </script>
+</body>
+</html>
