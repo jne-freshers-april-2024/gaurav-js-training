@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    nav ul{
+        display: flex;
+        background-color: purple;
+        justify-content: center;
+    }
+    nav ul li{
+        list-style: none;
+        padding: 12px;
+    }
+    nav ul li a{
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 7px;
+        text-decoration: none;
+    }
+    nav ul li a:hover{
+        background-color: rgb(178, 155, 178);
+        font-size: 17px;
+        border-radius: 3px;
+        
+    }
+    #btn{
+        background-color: green;
+        color: white;
+        padding: 7px;
+        border: none;
+        border-radius: 5px;
+        font-size: 17px;
+        cursor: pointer;
+        margin-left: 12px;
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Servives</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 style="text-align: center;">Start Working With Us</h1>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi sint repudiandae vero, rerum quidem voluptatem deleniti perferendis totam culpa esse laudantium explicabo! Unde, atque deleniti, molestiae beatae officiis recusandae nihil, repudiandae fugiat magnam laboriosam eveniet? Adipisci asperiores quis nobis nesciunt illum a, quaerat eos dolores animi praesentium ea sunt molestiae officia harum quasi reiciendis eligendi vero quas eum? Aperiam perspiciatis itaque architecto vero sapiente, magnam inventore distinctio quam! Nostrum nemo quis sequi, deserunt commodi earum reiciendis vitae dolor voluptatibus architecto voluptates possimus nisi aperiam fugit ut quas ipsum cumque a animi labore quidem iure, magnam cum saepe! Laborum repellat rem praesentium tempore. Distinctio eos ducimus dolores nobis. Veniam repudiandae nobis distinctio quisquam. Omnis excepturi nesciunt maiores commodi, quas voluptate aliquid minima praesentium animi beatae explicabo at. Unde tenetur eum est accusamus accusantium quod doloribus tempora consequuntur corrupti ipsa autem, vero laborum voluptas! Ducimus, aliquam libero. Unde aspernatur cum quasi voluptatibus dolorum, minus non nulla architecto natus pariatur id consequuntur, magni voluptatum officiis hic illum earum omnis sed iusto optio obcaecati veniam! Sit, modi? Reiciendis ex sapiente debitis fugit architecto? Nostrum nesciunt temporibus et architecto consequuntur hic sint neque qui quo natus explicabo ipsam culpa magnam quae debitis sed, nisi accusantium harum fuga, nobis rem dolores. Autem sapiente eius ducimus qui deserunt, ipsa iste in laborum quaerat veniam nobis fuga nulla necessitatibus provident neque soluta deleniti, et exercitationem facere dolorem laboriosam dolorum, explicabo voluptas ex? Nulla maiores in culpa ipsum doloremque. Praesentium quod, dolore aperiam quisquam odio tempore, deleniti quaerat quasi voluptate amet inventore? Consequatur iure error iusto architecto asperiores, eum quam aut nam ex aliquid distinctio labore in, earum fugit at quis, non deserunt dolorum repellat possimus recusandae quibusdam reiciendis. Eaque eius delectus nostrum ut? Ipsam sapiente repellat facere, repellendus et distinctio tempore animi voluptate dolores, quasi assumenda porro! Fuga, expedita sapiente ratione perferendis quia laboriosam, provident dicta reiciendis vero exercitationem suscipit voluptatem aperiam ut nobis, dolore obcaecati libero doloremque neque impedit quidem consequuntur rerum eveniet quo? Corporis quam corrupti nostrum sapiente laboriosam suscipit, id nihil distinctio laborum itaque unde eos fugiat, veniam voluptatem numquam ex explicabo dolore tenetur. Inventore impedit magnam delectus nesciunt repudiandae sequi ad! Impedit repellat eaque nam voluptates cum deserunt qui expedita repudiandae cumque voluptatum, aspernatur voluptatibus, quam minima. Accusamus aspernatur explicabo distinctio recusandae molestiae temporibus deleniti ipsa, quae, et iste neque sint praesentium voluptas delectus dolorum alias cupiditate ipsum dolor incidunt earum. Unde, labore! Minima ea hic maiores quas fugiat laborum vel aliquid! Corporis, reiciendis quos ad asperiores mollitia possimus unde nobis quod aperiam, deserunt adipisci amet molestias hic quas perspiciatis placeat error qui nam pariatur dicta aut? Nobis, fugit. Ipsum temporibus, laborum magni exercitationem soluta assumenda quis mollitia quaerat, ipsa ea illum, error autem? Tempore sint aperiam architecto neque, odit magnam asperiores unde iusto sunt ad nisi. Expedita ex vitae eaque voluptatum architecto provident tenetur aperiam suscipit illum? Expedita inventore incidunt eius repellendus pariatur. Nostrum facilis necessitatibus quae commodi pariatur dolores at delectus, aperiam vitae autem velit in eveniet numquam culpa impedit, fugiat, voluptate expedita? A reiciendis quis deleniti tempora, repellat quod adipisci quos iusto impedit pariatur. Aliquam dolorem excepturi repellendus? Aliquam reprehenderit numquam illo similique, dolore dolores sint saepe facilis? Debitis numquam ipsum assumenda, molestiae corporis magnam laborum iste similique commodi. Excepturi corrupti impedit nisi facere consectetur nostrum quod dolorum. Repellendus dolorem cum quod molestias eum sunt exercitationem voluptates odio a consectetur aut aspernatur numquam nesciunt, laborum, beatae quas.</p>
+        </section>
+        <section>
+            <button id="btn">Click Me</button>
+        </section>
+    </div>
+    <script>
+        // two way to print the message 
+        // 1 . console.log("Hello World") // ---> it will print the output on console
+        // 2. document.write("Hello World") // ---> it will print the output on window
+
+        let a = 45;
+        let b = 55;
+        console.log(a+b)
+        document.write("Hello World")
+
+        document.getElementById("btn").addEventListener(("dblclick"), ()=>{
+            alert("You performed double click event")
+        })
+    </script>
+</body>
+</html>
