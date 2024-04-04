@@ -1,0 +1,16 @@
+let date1 = new Date();
+console.log(date1)
+
+console.log(date1.toDateString())
+console.log(date1.toUTCString())
+console.log(date1.toISOString())
+console.log(date1.toLocaleDateString())
+console.log(date1.toLocaleString())
+console.log(date1.toTimeString())
+console.log(date1.getDate())
+console.log(date1.getDay())
+console.log(date1.getFullYear())
+console.log(date1.getHours())
+console.log(date1.getMilliseconds())
+console.log(date1.getMonth())
+console.log(date1.getTimezoneOffset())
