@@ -1,0 +1,11 @@
+let text = "";
+const today = new Date();
+const someDay = new Date();
+someDay.setFullYear(2064, 0, 12);
+
+if(today>someDay){
+    text = "current Date";
+}else{
+    text = "Something date";
+}
+console.log(text)

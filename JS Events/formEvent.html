@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+    }
+    form{
+        padding: 15px;
+        height: 300px;
+        width: 500px;
+        background-color: purple;
+        border-radius: 26px;
+    }
+    .fn, .sn, .ln{
+        color: white;
+        font-size: 20px;
+        padding: 15px;
+    }
+    label{
+        font-size: 2.1rem;
+    }
+    input{
+        text-align: center;
+        padding: 8px 8px;
+        border: none;
+        border-radius: 15px;
+        width: 240px;
+    }
+    #submit{
+        background-color: green;
+        color: white;
+        padding: 8px 10px;
+        font-size: 19px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <form action="">
+        <div class="fn">
+            <label for="fname">First Name : </label>
+            <input type="text" id="fname" placeholder="Enter Your Name">
+        </div>
+        <div class="sn">
+            <label for="sname">Second Name : </label>
+            <input type="text" id="sname" placeholder="Enter Second Name">
+        </div>
+        <div class="ln">
+            <label for="lname">Last Name : </label>
+            <input type="text" id="lname" placeholder="Enter Last Name">
+        </div>
+        <input type="submit" id="submit">
+    </form>
+    <p></p>
+    <script>
+        let form1 = document.querySelector("form");
+        let fnam = document.getElementById("fname");
+        let snam = document.getElementById("sname");
+        let lnam = document.getElementById("lname")
+        let pdat = document.querySelector("p")
+
+        form1.addEventListener("submit", (e)=>{
+            if(fnam.value === "" || snam.value === "" || lnam === ""){
+                e.preventDefault();
+                pdat.textContent = "You need to fill in both name"
+            }
+        });
+    </script>
+</body>
+</html>

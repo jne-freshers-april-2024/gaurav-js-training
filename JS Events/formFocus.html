@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input{
+        
+    }
+</style>
+<body>
+    <label for="name">Type : </label>
+    <input type="text" id="fname" placeholder="type something">
+    <script>
+
+        // focus
+        // let fname = document.getElementById("fname");
+        // fname.addEventListener("focus", (e)=>{
+        //     event.target.style.backgroundColor = 'red';
+        // }) 
+
+        // blur
+        let blurEvent = document.getElementById("fname");
+        blurEvent.addEventListener("blur", (e)=>{
+            event.target.style.backgroundColor = 'purple';
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="fname">Enter Text Here : </label>
+    <input type="text" name="fname" id="inputxt">
+    <p id="output"></p>
+    <script>
+        let inputxt = document.getElementById("inputxt")
+        let output = document.getElementById("output");
+
+        inputxt.addEventListener("keypress", (e)=>{
+            const inputData = event.target.value;
+            output.textContent = "You Typed : "+ inputData;
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="info">Data</label>
+    <input type="text" id="inputField">
+    <p id="output"></p>
+    <script>
+        let inputField = document.getElementById("inputField");
+        let output = document.getElementById("output");
+        inputField.addEventListener("keyup", (e)=>{
+            const inputAdd = event.target.value;
+            output.textContent = "You Typed " + inputAdd;
+        })
+    </script>
+</body>
+</html>

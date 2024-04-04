@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nulla ullam ipsa ab eligendi sed natus, nisi cum provident, ducimus fugiat quaerat molestiae, libero enim obcaecati neque optio quam. Praesentium tempore explicabo facere laudantium itaque cupiditate voluptatibus veritatis minima tempora. Pariatur dolorum ipsa assumenda atque praesentium velit ipsum iure rerum quibusdam nulla odio, nemo aspernatur sapiente maiores suscipit in. Dignissimos, fuga quas molestias facere et rerum eius.</p>
+    <button id="btn">Click Me</button>
+    <script>
+        // change through the getElementById
+        // document.getElementById("btn").addEventListener(("contextmenu"), ()=>{
+        //     document.write("Context Menu")
+        // })
+
+        // chnage through the query selector
+        let b = document.querySelector("button");
+        b.addEventListener(("mouseup"), ()=>{
+            document.write("Mouse Up")
+        })
+    </script>
+</body>
+</html>
